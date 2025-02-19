@@ -17,7 +17,7 @@ app.use((req, res, next)=> {
 
 // Cors
 app.use(cors({
-    origin: "http://localhost:3000/",
+    origin: "https://doniecode-todo-mern-app.netlify.app",
     methods: ["GET", "POST", "DELETE", "PUT", "PATCH"]
 }))
 
