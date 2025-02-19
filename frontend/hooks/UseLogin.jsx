@@ -12,7 +12,7 @@ const UseLogin = () => {
 
     const login = async (creds)=> {
 
-        const res = await fetch("http://localhost:4000/user/login", {
+        const res = await fetch(`${import.meta.env.VITE_DB_URI}/user/login`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
