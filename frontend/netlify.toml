@@ -1,4 +1,8 @@
 [[redirects]]
   from = "/*"
   to = "/"
+<<<<<<< HEAD
   status = 200
+=======
+  status = 200
+>>>>>>> e28c0e0eb068cfc44509765ae0a7a5b53148afbb

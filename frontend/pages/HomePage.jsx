@@ -22,7 +22,11 @@ const HomePage = () => {
 // items to fetch
 useEffect(()=> {
   const getTodos = async ()=> {
+<<<<<<< HEAD
     const res = await fetch(`${import.meta.env.VITE_DB_URI}/todos`, {
+=======
+    const res = await fetch('https://todo-mern-app-api-f46u.onrender.com/todos', {
+>>>>>>> e28c0e0eb068cfc44509765ae0a7a5b53148afbb
       headers: {"Authorization": `Bearer ${token}`}
     })
     const data = await res.json()
@@ -49,7 +53,11 @@ let renderNewItem = async (e)=>{
   if(!title){
     return;
   }
+<<<<<<< HEAD
     const res = await fetch(`${import.meta.env.VITE_DB_URI}/todos/`,{
+=======
+    const res = await fetch('https://todo-mern-app-api-f46u.onrender.com/todos/',{
+>>>>>>> e28c0e0eb068cfc44509765ae0a7a5b53148afbb
       method: 'POST',
       headers: {
         "Content-Type": "application/json",
@@ -68,7 +76,11 @@ let renderNewItem = async (e)=>{
 
 // delete items 
 let deleteItem = async (id)=> {
+<<<<<<< HEAD
     const res = await fetch(`${import.meta.env.VITE_DB_URI}/todos/${id}`,{
+=======
+    const res = await fetch(`https://todo-mern-app-api-f46u.onrender.com/todos/${id}`,{
+>>>>>>> e28c0e0eb068cfc44509765ae0a7a5b53148afbb
       method: 'DELETE',
       headers: { "Authorization": `Bearer ${token}` }
     })
@@ -90,7 +102,11 @@ const updateItem = async (id)=> {
     }
     
   })
+<<<<<<< HEAD
   const res = await fetch(`${import.meta.env.VITE_DB_URI}/${id}`, {
+=======
+  const res = await fetch(`https://todo-mern-app-api-f46u.onrender.com/${id}`, {
+>>>>>>> e28c0e0eb068cfc44509765ae0a7a5b53148afbb
     headers: { "Authorization": `Bearer ${token}` }
   })
   const json = await res.json();

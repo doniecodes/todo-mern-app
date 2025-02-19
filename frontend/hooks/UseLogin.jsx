@@ -12,7 +12,11 @@ const UseLogin = () => {
 
     const login = async (creds)=> {
 
+<<<<<<< HEAD
         const res = await fetch(`${import.meta.env.VITE_DB_URI}/user/login`, {
+=======
+        const res = await fetch("https://todo-mern-app-api-f46u.onrender.com/user/login", {
+>>>>>>> e28c0e0eb068cfc44509765ae0a7a5b53148afbb
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
