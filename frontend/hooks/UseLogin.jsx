@@ -12,7 +12,7 @@ const UseLogin = () => {
 
     const login = async (creds)=> {
 
-        const res = await fetch("http://localhost:4000/user/login", {
+        const res = await fetch("https://todo-mern-app-api-f46u.onrender.com/user/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
