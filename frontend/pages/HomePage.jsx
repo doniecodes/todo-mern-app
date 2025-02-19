@@ -22,7 +22,7 @@ const HomePage = () => {
 // items to fetch
 useEffect(()=> {
   const getTodos = async ()=> {
-    const res = await fetch('http://localhost:4000/todos', {
+    const res = await fetch('https://todo-mern-app-api-f46u.onrender.com/todos', {
       headers: {"Authorization": `Bearer ${token}`}
     })
     const data = await res.json()
@@ -49,7 +49,7 @@ let renderNewItem = async (e)=>{
   if(!title){
     return;
   }
-    const res = await fetch('http://localhost:4000/todos/',{
+    const res = await fetch('https://todo-mern-app-api-f46u.onrender.com/todos/',{
       method: 'POST',
       headers: {
         "Content-Type": "application/json",
@@ -68,7 +68,7 @@ let renderNewItem = async (e)=>{
 
 // delete items 
 let deleteItem = async (id)=> {
-    const res = await fetch(`http://localhost:4000/todos/${id}`,{
+    const res = await fetch(`https://todo-mern-app-api-f46u.onrender.com/todos/${id}`,{
       method: 'DELETE',
       headers: { "Authorization": `Bearer ${token}` }
     })
@@ -90,7 +90,7 @@ const updateItem = async (id)=> {
     }
     
   })
-  const res = await fetch(`http://localhost:4000/${id}`, {
+  const res = await fetch(`https://todo-mern-app-api-f46u.onrender.com/${id}`, {
     headers: { "Authorization": `Bearer ${token}` }
   })
   const json = await res.json();
