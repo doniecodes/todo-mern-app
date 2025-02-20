@@ -17,8 +17,10 @@ app.use((req, res, next)=> {
 
 // Cors
 app.use(cors({
-    origin: "https://todo-mern-app-api-f46u.onrender.com", "http://127.0.0.1:3000",
-    methods: ["GET", "POST", "DELETE", "PUT", "PATCH"]
+    origin: ["https://doniecode-todo-mern-app.netlify.app/", "http://localhost:3000"],
+    methods: ["GET", "POST", "DELETE", "PUT", "PATCH"],
+    credentials: true,
+    allowedHeaders: ["Content-Type", "Authorization"]
 }))
 
 // Mongoose connection
