@@ -17,7 +17,7 @@ app.use((req, res, next)=> {
 
 // Cors
 app.use(cors({
-    origin: "https://doniecode-todo-mern-app.netlify.app",
+    origin: "*",
     methods: ["GET", "POST", "DELETE", "PUT", "PATCH"]
 }))
 
