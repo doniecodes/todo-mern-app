@@ -17,7 +17,7 @@ app.use((req, res, next)=> {
 
 // Cors
 app.use(cors({
-    origin: "*",
+    origin: "https://todo-mern-app-api-f46u.onrender.com", "http://127.0.0.1:3000",
     methods: ["GET", "POST", "DELETE", "PUT", "PATCH"]
 }))
 
